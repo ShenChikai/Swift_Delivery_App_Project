@@ -1,0 +1,37 @@
+# Harvest - Farmer’s Market Delivery Service
+
+## Description
+Here at Harvest, we believe that farm fresh should be for everyone. Harvest aims to deliver the best quality produce right to your door no matter the weather, location or time. We work directly with Farmers’ Markets and local farmers to provide Angelenos a convenient way to order fresh and local produce as easily as any take-out meal.
+
+Harvest is an iOS app that provides farm produce delivery service, similar to popular apps, such as “Postmates” and “DoorDash.” Harvest was founded by 4 Iovine and Young Academy students at USC. Over six months, the team has been conducting research, connecting with business partners, testing the product, and preparing clickable prototypes. 
+
+Harvest is developed in two applications for both customer and business versions, where the business version provides service to the farm vendors and the drivers.
+
+The major features of **Harvest - Business Side** include:
+- Drivers can receive the orders nearest to their current position and accept/decline orders based on their needs.
+- Drivers can check active order list and order details when picking up orders in markets.
+- Drivers' total driving time and total earned for current session is available in Homepage.
+- Delivery driver account with integrated map navigation and linking direct payment to their bank account.
+- An order is automatically proceeded to the next step when drivers arrive at the designated position.
+
+## What our app looks like - Business Side
+in progress
+
+## To run the iOS app
+1. Open Xcode
+2. Git clone the project and open the project workspace in Xcode
+3. Open command line and go to the project directory
+4. Pod install (You need to have cocoapods first)
+5. Build and Run the project on Xcode
+6. The simulator should pops up, open the Harvest app
+7. Have fun!
+
+
+## Project contributor
+- Zixuan Li zixuanli@usc.edu
+- Lihan Zhu lihanzhu@usc.edu
+- Denny Shen dennyshe@usc.edu
+- Jiayang Li jli686@usc.edu
+
+## Credentials
+Plase contact Lihan for Firebase and Stripe credentials. Currently, the billing plan of Firebase is switched to "Free" but the Cloud Functions and Cloud Storage services may require "Pay as you go" plan.

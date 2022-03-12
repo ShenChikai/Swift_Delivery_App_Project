@@ -1,0 +1,36 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '12.0'
+
+target 'Harvest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Harvest
+
+  # Add pods for any other desired Firebase products
+  # https://firebase.google.com/docs/ios/setup#available-pods
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'GoogleSignIn'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
+  pod 'GeoFire/Utils'
+  pod 'Firebase/Functions'
+  pod 'MessageKit'
+  pod 'ValueStepper'
+  pod 'JGProgressHUD'
+
+  # Stripe API
+  pod 'Stripe'
+  
+  target 'HarvestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HarvestUITests' do
+    # Pods for testing
+  end
+
+end

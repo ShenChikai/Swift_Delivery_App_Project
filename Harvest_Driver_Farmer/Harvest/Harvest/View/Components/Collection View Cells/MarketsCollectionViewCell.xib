@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MarketsCollectionViewCell" customModule="Harvest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="jP1-4B-M73">
+                        <rect key="frame" x="16" y="0.0" width="342" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="ief-HJ-5Fb"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnT-69-lKd" customClass="RoundButton" customModule="Harvest" customModuleProvider="target">
+                        <rect key="frame" x="318" y="8" width="32" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="hk1-Y7-iIF"/>
+                            <constraint firstAttribute="height" constant="32" id="qeA-VK-IEJ"/>
+                        </constraints>
+                        <color key="tintColor" name="FavoritePink"/>
+                        <state key="normal">
+                            <imageReference key="image" image="heart" catalog="system" symbolScale="medium"/>
+                        </state>
+                        <state key="selected">
+                            <imageReference key="image" image="heart.fill" catalog="system" symbolScale="medium"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="saveButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9Ee-KI-g2y"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mNw-iV-VXC">
+                        <rect key="frame" x="16" y="186" width="342" height="74"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e9G-SC-nMn" userLabel="Left Stack View">
+                                <rect key="frame" x="0.0" y="1.5" width="37" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8f-cs-s2C">
+                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLG-pQ-Mvu">
+                                        <rect key="frame" x="0.0" y="26.5" width="37" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" name="GreenTheme"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-Dr-Mrm">
+                                        <rect key="frame" x="0.0" y="54.5" width="34.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyn-N3-2wx" userLabel="See Vendors Button" customClass="RoundButton" customModule="Harvest" customModuleProvider="target">
+                                <rect key="frame" x="258" y="19.5" width="84" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="B17-02-nln"/>
+                                    <constraint firstAttribute="width" constant="84" id="X5J-2A-GwU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                <state key="normal" title="See Vendors">
+                                    <color key="titleColor" name="GreenTheme"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seeVendorButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vtB-E9-DM1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mNw-iV-VXC" secondAttribute="trailing" constant="16" id="BLt-ML-YIm"/>
+                <constraint firstItem="jP1-4B-M73" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LCP-hi-Vrg"/>
+                <constraint firstAttribute="bottom" secondItem="mNw-iV-VXC" secondAttribute="bottom" id="N4k-k4-4la"/>
+                <constraint firstAttribute="trailing" secondItem="jP1-4B-M73" secondAttribute="trailing" constant="16" id="TFu-Vv-SJM"/>
+                <constraint firstItem="jP1-4B-M73" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Xk9-mD-qS8"/>
+                <constraint firstItem="mNw-iV-VXC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="YbU-iz-uBw"/>
+                <constraint firstAttribute="trailing" secondItem="CnT-69-lKd" secondAttribute="trailing" constant="24" id="fzh-f1-dqt"/>
+                <constraint firstItem="CnT-69-lKd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="pRA-pq-r2g"/>
+                <constraint firstItem="mNw-iV-VXC" firstAttribute="top" secondItem="jP1-4B-M73" secondAttribute="bottom" constant="16" id="xPt-5s-3w4"/>
+            </constraints>
+            <size key="customSize" width="374" height="263"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="FNs-Dr-Mrm" id="3fj-7g-iYJ"/>
+                <outlet property="distanceLabel" destination="n8f-cs-s2C" id="5O0-Cf-8NP"/>
+                <outlet property="marketImageView" destination="jP1-4B-M73" id="s0c-CD-56M"/>
+                <outlet property="marketNameLabel" destination="mLG-pQ-Mvu" id="dhG-5H-YSR"/>
+                <outlet property="saveButton" destination="CnT-69-lKd" id="DVQ-wF-DsH"/>
+                <outlet property="seeVendorsButton" destination="Zyn-N3-2wx" id="vN6-VA-e4v"/>
+            </connections>
+            <point key="canvasLocation" x="253.62318840579712" y="76.674107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="CnT-69-lKd">
+            <size key="intrinsicContentSize" width="20.5" height="22"/>
+        </designable>
+        <designable name="Zyn-N3-2wx">
+            <size key="intrinsicContentSize" width="68" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="FavoritePink">
+            <color red="0.91399997472763062" green="0.59200000762939453" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenTheme">
+            <color red="0.21199999749660492" green="0.4779999852180481" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
